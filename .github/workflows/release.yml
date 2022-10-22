@@ -1,0 +1,26 @@
+name: Release
+on:
+  push:
+    branches:
+      - develop
+
+env:
+  GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+jobs: 
+  release:
+    runs-on: ubuntu-latest
+    environment: release
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - run: git config --global user.email "pro.davideven@gmail.com"
+    - run: git config --global user.name "davideven-ci"
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm ci
+    - name: release website
+      run: npm run release -- minor --ci --debug
+    

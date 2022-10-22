@@ -1,0 +1,16 @@
+{
+  "github": {
+    "release": true,
+    "autoGenerate": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "git": {
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
+    "commitMessage": "build(release): ${version}"
+  },
+  "hooks": {
+    "after:bump": "npx auto-changelog -p"
+  }
+}
