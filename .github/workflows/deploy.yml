@@ -26,8 +26,8 @@ jobs:
     - name: Build page
       run: npm run build
     - name: release
-      run: npm version minor
-      run: git push
+      run: npm version minor && git push
+      
   
   deploy:
     needs: release
