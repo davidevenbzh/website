@@ -23,7 +23,5 @@ jobs:
       run: npm install
     - name: Build page
       run: npm run build
-    - name: release
-      run: npm run release -- minor --dry-run --ci
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+    - name: release-it Github Action
+      uses: TheRealWaldo/release-it@v0.7.2
