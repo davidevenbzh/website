@@ -3,15 +3,40 @@ on:
   push:
     branches:
       - main
+  
+
+
 jobs:
+  
+  release:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - run: git config --global user.email "pro.davideven@gmail.com"
+    - run: git config --global user.name "davideven-ci"
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Packages
+      run: npm install
+    - name: Build page
+      run: npm run build
+    - name: release
+      run: npm version minor
+  
   deploy:
+    needs: release
     runs-on: ubuntu-latest
     environment: github-pages
     strategy:
       matrix:
         node-version: [16.x]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
