@@ -22,9 +22,6 @@ jobs:
         
     - name: Install Packages
       run: npm install
-    - name: Build page
-      run: npm run build
-    - name: release-it Github Action
-      uses: TheRealWaldo/release-it@v0.7.2
-      with:
-        debug: true
+    - name: release
+      run: npm run release -- minor --ci --debug
+    
