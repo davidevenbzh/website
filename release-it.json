@@ -2,18 +2,16 @@
   "git": {
     "commitMessage": "chore: release v${version}",
   },
-  "github": {
-    "release": true,
-    "tokenRef": "PERSONAL_ACCESS_TOKEN",
-    "autoGenerate": true
-  },
-  "npm": {
-    "publish": false
-  },
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
       "preset": "angular"
     }
-  }
+  },
+  "github": {
+    "release": true,
+    "tokenRef": "PERSONAL_ACCESS_TOKEN",
+    "autoGenerate": true
+  },
+  "npm": "false"
 }
