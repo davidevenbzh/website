@@ -4,7 +4,8 @@
   },
   "github": {
     "release": true,
-    "tokenRef": "PERSONAL_ACCESS_TOKEN"
+    "tokenRef": "PERSONAL_ACCESS_TOKEN",
+    "autoGenerate": false
   },
   "npm": {
     "publish": false
