@@ -1,6 +1,7 @@
 {
   "git": {
-    "commitMessage": "chore: release v${version}"
+    "commitMessage": "chore: release v${version}",
+    "changelog": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
   },
   "github": {
     "release": true,
