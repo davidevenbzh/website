@@ -1,7 +1,6 @@
 {
   "git": {
     "commitMessage": "chore: release v${version}",
-    "changelog": "git log --pretty=format:'* %s (%h)' [REV_RANGE]"
   },
   "github": {
     "release": true,
@@ -13,6 +12,7 @@
   },
   "plugins": {
     "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
       "preset": "angular"
     }
   }
