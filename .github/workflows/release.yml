@@ -22,6 +22,6 @@ jobs:
         
     - name: Install Packages
       run: npm install
-    - name: release
-      run: npm run release -- minor --ci --debug
+    #- name: release
+      #run: npm run release -- minor --ci --debug
     
