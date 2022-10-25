@@ -2,7 +2,7 @@
   "github": {
     "release": true,
     "tokenRef": "PERSONAL_ACCESS_TOKEN",
-    "autoGenerate": false
+    "autoGenerate": true
   },
   "npm": {
     "publish": false
