@@ -1,0 +1,16 @@
+{
+  "github": {
+    "release": true,
+    "tokenRef": "PERSONAL_ACCESS_TOKEN"
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  },
+  "verbose": 2
+}
