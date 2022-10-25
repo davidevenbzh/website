@@ -1,7 +1,6 @@
 {
   "github": {
     "release": true,
-    "tokenRef": "PERSONAL_ACCESS_TOKEN",
     "autoGenerate": true
   },
   "npm": {
