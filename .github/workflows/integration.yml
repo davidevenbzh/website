@@ -16,6 +16,10 @@ jobs:
         node-version: 16
         cache: 'npm'
     - run: npm ci
+    - name: lint website
+      run: npm run lint:ci
+    - name: prettier website
+      run: npm run pretty:ci
     - name: test website
       run: npm run test
     - name: build website
