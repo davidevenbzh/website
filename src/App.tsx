@@ -1,6 +1,6 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App(): React.ReactNode {
   return (
@@ -20,7 +20,7 @@ function App(): React.ReactNode {
         </a>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

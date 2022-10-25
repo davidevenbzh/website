@@ -47,7 +47,8 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,css}": [
       "npm run lint",
-      "npm run pretty"
+      "npm run pretty",
+      "git add"
     ]
   },
   "devDependencies": {
