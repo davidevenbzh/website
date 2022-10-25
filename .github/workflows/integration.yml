@@ -1,26 +1,26 @@
 name: Integration
 on:
   push:
-    branches-ignore:    
+    branches-ignore:
       - 'main'
       - 'develop'
 
-jobs: 
+jobs:
   integration:
     runs-on: ubuntu-latest
     environment: integration
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        cache: 'npm'
-    - run: npm ci
-    - name: lint website
-      run: npm run lint:ci
-    - name: prettier website
-      run: npm run pretty:ci
-    - name: test website
-      run: npm run test
-    - name: build website
-      run: npm run build
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm ci
+      - name: lint website
+        run: npm run lint:ci
+      - name: prettier website
+        run: npm run pretty:ci
+      - name: test website
+        run: npm run test
+      - name: build website
+        run: npm run build
