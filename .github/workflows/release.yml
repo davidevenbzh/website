@@ -31,5 +31,5 @@ jobs:
       with:
         debug: false
         github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        json-opts: '{"dry-run": true, "npm": false}'
+        json-opts: '{"npm": false}'
     
