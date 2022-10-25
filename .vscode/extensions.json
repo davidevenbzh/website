@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "cschleiden.vscode-github-actions",
+    "wix.vscode-import-cost",
+    "ms-vscode.vscode-typescript-next",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "dsznajder.es7-react-js-snippets",
+    "xabikos.javascriptsnippets",
+    "formulahendry.auto-rename-tag"
+  ]
+}
