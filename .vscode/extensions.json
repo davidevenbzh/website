@@ -9,6 +9,7 @@
     "bradlc.vscode-tailwindcss",
     "dsznajder.es7-react-js-snippets",
     "xabikos.javascriptsnippets",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "csstools.postcss"
   ]
 }
