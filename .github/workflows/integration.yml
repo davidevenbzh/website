@@ -6,7 +6,7 @@ on:
       - 'develop'
 
 jobs: 
-  deploy:
+  integration:
     runs-on: ubuntu-latest
     environment: integration
     steps:
