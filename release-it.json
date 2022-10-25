@@ -10,5 +10,6 @@
     "release": true,
     "tokenRef": "PERSONAL_ACCESS_TOKEN"
   },
-  "npm": "false"
+  "npm": "false",
+  "verbose": 2
 }
