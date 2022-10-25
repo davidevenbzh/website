@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint:ci": "eslint 'src/**/*.{js,jsx,ts,tsx,json}'",
-    "pretty:ci": "prettier 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "pretty:ci": "prettier --check 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "lint": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
     "pretty": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
