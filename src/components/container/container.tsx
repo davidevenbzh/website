@@ -1,9 +1,19 @@
 import Introduction from '../introduction';
+import Skills from '../skills';
 
 const Container = (): JSX.Element => {
   return (
-    <div className='mt-4 flex items-end justify-center'>
-      <Introduction />
+    <div>
+      <div>
+        <div className='container py-4 mx-auto px-4'>
+          <Introduction />
+        </div>
+      </div>
+      <div className='bg-gray-200'>
+        <div className='container py-4 mx-auto px-4'>
+          <Skills />
+        </div>
+      </div>
     </div>
   );
 };

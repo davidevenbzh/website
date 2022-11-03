@@ -2,14 +2,14 @@ import { getAge } from '../../utils';
 
 const Introduction = (): JSX.Element => {
   return (
-    <div className='prose'>
+    <article className='max-w-full prose prose-p:text-sm'>
       <h2>Présentation</h2>
-      <section className='text-smù'>
+      <section>
         <p>
-          Depuis mon plus jeune âge je suis passionné par l&apos;informatique, après mon bac en
-          poche j&apos;ai voulu en faire mon métier et je suis partie à l&apos;école EPITECH de
+          Depuis mon plus jeune âge je suis passionné par l&apos;informatique. Après mon bac en
+          poche, j&apos;ai voulu en faire mon métier et je suis partie à l&apos;école EPITECH de
           Rennes. Cette école m&apos;a enseigné une notion très importante pour moi aujourd&apos;hui
-          qui est :<b>apprendre à apprendre</b>. Cette notion m&apos;a permis de faire évoluer ma
+          qui est: <b>apprendre à apprendre</b>. Cette notion m&apos;a permis de faire évoluer ma
           curiosité et m&apos;aide beaucoup lors de ma veille technique et mon auto-formation.
         </p>
         <p>
@@ -28,15 +28,16 @@ const Introduction = (): JSX.Element => {
           poste, la BNP, ...) d&apos;environ un an en moyenne. Ces expériences m&apos;ont permis de
           perfectionner mes compétences dans le développement d&apos;application web et mobile.
           Toujours au sein de cette entreprise je suis lead de Comet&apos;, un regroupement de
-          salarié d&apos;extia qui essaie de partager sur des sujets divers sous forme de
-          meetup/atelier.
+          salarié d&apos;extia qui essaie de partager sur des sujets articleers sous forme de
+          meetup/atelier. Ces évènements m&apos;ont permis de perfectionner mes compétences
+          pédagogiques et de vulgarisations.
         </p>
         <p>
           Aujourd&apos;hui j&apos;ai {getAge()} ans, j&apos;habite à Nantes, et j&apos;ai développé
           ce site principalement pour rassembler l&apos;ensemble de mon savoir faire.
         </p>
       </section>
-    </div>
+    </article>
   );
 };
 
