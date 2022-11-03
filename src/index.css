@@ -2,14 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  html {
+    @apply sm:text-base;
+    @apply md:text-lg;
+    @apply lg:text-xl;
+    @apply xl:text-2xl;
+    @apply 2xl:text-3xl;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+@font-face {
+  font-family: NotoSansMono;
+  src: url('./assets/fonts/NotoSansMono-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+  font-family: NotoSerifBold;
+  src: url('./assets/fonts/NotoSerif-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: NotoSerifBoldItalic;
+  src: url('./assets/fonts/NotoSerif-BoldItalic.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: NotoSerifItalic;
+  src: url('./assets/fonts/NotoSerif-Italic.ttf');
+}
+
+@font-face {
+  font-family: NotoSerif;
+  src: url('./assets/fonts/NotoSerif-Regular.ttf');
+}
+
+html {
+  font-family: NotoSansMono;
+}
+
+header {
+  @apply flex items-end justify-center h-screen bg-fixed bg-center bg-cover;
+  background-image: url('./assets/background.jpg');
 }
